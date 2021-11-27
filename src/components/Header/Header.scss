@@ -1,0 +1,25 @@
+@use "../../App";
+
+.header {
+    display: flex;
+    background-color: App.$main-color-gray;
+    height: 73px;
+    justify-content: space-between;
+
+    .header-content {
+        display: flex;
+        justify-content: space-evenly;
+        width: 500px;
+        margin-right: 100px;
+
+        button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 24px;
+        }
+        button:hover {
+            color: App.$main-color-yellow;
+        }
+    }
+}
