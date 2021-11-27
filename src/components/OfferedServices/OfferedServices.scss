@@ -1,0 +1,31 @@
+@use '../../App';
+
+.services-component {
+    h2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        margin-top: 100px;
+        font-family: "Oswald";
+        font-size: 36px;
+        font-weight: 400;
+    }
+    .services {
+        color: white;
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+
+        .service-img {
+            width: 300px;
+            height: 300px;
+            background-color: App.$main-color-gray;
+        }
+        .service-description{
+            width: 300px;
+            height: 300px;
+        }
+    }
+}
