@@ -1,13 +1,14 @@
-@use '../../App';
+@use "../../App";
 
 .services-component {
+    margin-top: 200px;
     h2 {
         display: flex;
         flex-direction: column;
         justify-content: center;
         color: white;
         text-align: center;
-        margin-top: 100px;
+        margin-bottom: 50px;
         font-family: "Oswald";
         font-size: 36px;
         font-weight: 400;
@@ -16,16 +17,31 @@
         color: white;
         list-style: none;
         display: flex;
-        justify-content: space-evenly;
+        justify-content:space-evenly;
+        font-family: 'Open Sans';
+        font-size: 24px;
 
         .service-img {
-            width: 300px;
-            height: 300px;
+            width: 415px;
+            height: 415px;
             background-color: App.$main-color-gray;
+
         }
-        .service-description{
-            width: 300px;
-            height: 300px;
+        .service-description {
+            width: 535px;
+            height: 207px;
+            text-align: right;
+            font-weight: 300;
+            align-self: center;
+
+            .service-header {
+                font-family: "Oswald";
+                font-size: 24px;
+                font-weight: 400;
+            }
+        }
+        .service-description:nth-child(2){
+            text-align: left;
         }
     }
 }
