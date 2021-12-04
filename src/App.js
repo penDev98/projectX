@@ -1,17 +1,20 @@
 
 import './App.scss'
-import Header from './components/Header/Header'
-import OfferedServices from './components/OfferedServices/OfferedServices'
-import Team from './components/Team/Team'
+import { Route, Routes } from 'react-router-dom'
+import HomePage from './components/HomePage/HomePage'
+import Header from './components/HomePage/Header/Header'
+import ServicesPage from './components/ServicesPage/ServicesPage'
+
 
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <div className='main-img'></div>
-      <Team/>
-      <OfferedServices/>
+      <Routes>
+        <Route path="/" exact element={<HomePage />} />
+        <Route path="/services" exact element={<ServicesPage />} />
+      </Routes>
     </div>
   )
 }
