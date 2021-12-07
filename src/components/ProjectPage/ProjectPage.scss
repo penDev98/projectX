@@ -1,0 +1,91 @@
+@use "../../App";
+
+.project-layout {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+
+    .project-layout-title {
+        color: white;
+        margin-top: 50px;
+    }
+
+    h2 {
+        color: black;
+        font-family: "Oswald";
+        font-size: 36px;
+        font-weight: 400;
+    }
+
+    .left,
+    .right-down {
+        background-color: App.$main-color-gray;
+    }
+
+    .mid-up,
+    .second-section {
+        background-color: whitesmoke;
+    }
+
+    .mid-down,
+    .right-up {
+        background-color: App.$main-color-yellow;
+    }
+
+    .grid-wrapper {
+        width: 1075px;
+        height: 940px;
+        display: flex;
+        flex-direction: column;
+        align-items: space-between;
+        justify-content: space-between;
+        margin-top: 50px;
+
+        .grid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .first-section {
+            display: flex;
+            justify-content: space-between;
+
+            .left {
+                width: 325px;
+                height: 615px;
+            }
+
+            .mid-up,
+            .mid-down {
+                width: 325px;
+                height: 290px;
+            }
+
+            .grid.mid,
+            .grid.right {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            .right-up {
+                width: 360px;
+                height: 330px;
+            }
+
+            .right-down {
+                width: 360px;
+                height: 245px;
+            }
+        }
+
+        .second-section {
+            width: 1075px;
+            height: 300px;
+        }
+    }
+}
