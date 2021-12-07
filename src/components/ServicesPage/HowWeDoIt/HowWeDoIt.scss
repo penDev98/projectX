@@ -2,13 +2,14 @@
 
 .how-we-do-section {
     display: flex;
+    justify-content: center;
     margin-top: 150px;
 
     .info-wrapper {
         display: flex;
         flex-direction: column;
         background-color: App.$main-color-gray;
-        width: 50%;
+        width: 720px;
         height: 540px;
         align-items: center;
         justify-content: space-evenly;
@@ -64,7 +65,7 @@
         }
     }
     img {
-        width: 50%;
+        width: 720px;
         height: 540px;
         background-color: App.$main-color-yellow;
     }

@@ -13,7 +13,6 @@ function HowWeDoIt() {
                     <button className='button-hover'>FIND OUT MORE</button>
                 </article>
                 <img></img>
-
             </section>
         </>
     );

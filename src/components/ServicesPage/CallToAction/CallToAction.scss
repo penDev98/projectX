@@ -1,0 +1,25 @@
+@use '../../../App';
+
+.cta-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 600px;
+
+    h1 {
+        color: white;
+        font-family: 'Oswald';
+        font-size: 64px;
+        font-weight: 400;
+    }
+
+    button {
+        color: App.$main-color-yellow;
+        background-color: transparent;
+        border: none;
+        font-family: 'Oswald';
+        font-size: 24px;
+    }
+
+}
