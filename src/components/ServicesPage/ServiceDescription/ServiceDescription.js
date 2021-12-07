@@ -3,7 +3,8 @@ import './ServiceDescription.scss'
 function ServiceDescription() {
     return (
         <>
-            <h3 className="title what">WHAT WE DO</h3>
+        <div className="what-we-do-section">
+            <h2>WHAT WE DO</h2>
             <section className='descriptions'>
                 <article className="service web">
                     <h2>WEB DEVELOPMENT</h2>
@@ -18,6 +19,7 @@ function ServiceDescription() {
                     <h2>MOBILE DEVELOPMENT</h2>
                 </article>
             </section>
+        </div>
         </>
     );
 }
