@@ -1,0 +1,76 @@
+@use '../../App';
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    h2 {
+        color: white;
+        font-family: 'Oswald';
+        font-size: 36px;
+        font-weight: 400;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .articles-wrapper {
+        width: 1090px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .single-article-wrapper{
+            text-align: center;
+        }
+
+        img {
+            background-color: App.$main-color-gray;
+            width: 345px;
+            height: 345px;
+   
+        }
+
+        h3 {
+            color: white;
+            font-family: 'Oswald';
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 100px;
+        }
+    }
+
+    .paginator-wrapper {
+        .btn-wrapper {
+            color: App.$main-color-yellow;
+            font-family: 'Oswald';
+            font-size: 18px;
+            font-weight: 200;
+            border: none;
+            background-color: transparent;
+            margin: 50px;
+            cursor: pointer;
+        }
+        
+        .page-number-btn.current {
+            color: App.$main-color-yellow;
+            font-family: 'Open Sans';
+            font-size: 18px;
+            font-weight: 400;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+        .page-number-btn {
+            color: white;;
+            font-family: 'Open Sans';
+            font-size: 17px;
+            font-weight: 200;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+    }
+}
