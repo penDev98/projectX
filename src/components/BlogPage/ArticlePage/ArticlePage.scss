@@ -1,18 +1,16 @@
-@use '../../../App';
+@use "../../../App";
 
 .article-page-wrapper {
-
-    .article-header-img{
+    .article-header-img {
         width: 50%;
         height: 800px;
         background-color: App.$main-color-yellow;
-
     }
 
-    h1{
+    h1 {
         color: white;
         width: 1440px;
-        font-family: 'Oswald';
+        font-family: "Oswald";
         font-size: 96px;
         font-weight: 400;
         text-align: center;
@@ -22,29 +20,29 @@
     }
 
     .article-layout {
-        
+        display: flex;
+        flex-direction: column;
+
         .first-section {
             display: flex;
-            margin-top: 130px;          
-            
+            justify-content: space-evenly;
+            margin-left: 300px;
+            margin-top: 130px;
+
             .author-info {
                 display: flex;
                 align-items: center;
-                justify-content: flex-end;
-                align-self: flex-start;
-                width: 50%;
-                padding-right: 80px;
-                
-    
+                align-self: baseline;
+                padding-left: 80px;
+
                 h5 {
-                    font-family: 'Oswald';
+                    font-family: "Oswald";
                     font-size: 24px;
                     font-weight: 400;
-                    color: #48B6B6;
+                    color: #48b6b6;
                     margin-right: 21px;
-        
                 }
-    
+
                 img {
                     width: 65px;
                     height: 65px;
@@ -54,14 +52,13 @@
             }
 
             .paragraph-wrapper {
+                display: flex;
+                flex-direction: column;
                 color: white;
-                width: 537px;;
-                margin: 20px;
-                font-family: 'Open Sans';
+                font-family: "Open Sans";
                 font-size: 24px;
-                margin-left: 0px;
-        
-            
+                width: 537px;
+                margin-top: 30px;
 
                 h6 {
                     font-weight: 600;
@@ -71,14 +68,11 @@
                 }
 
                 p {
-                    font-weight: 400;
+                    font-weight: 300;
                     margin: 0;
                     padding: 0;
                 }
             }
         }
     }
-
-
 }
-
