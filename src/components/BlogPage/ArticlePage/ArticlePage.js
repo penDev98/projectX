@@ -37,17 +37,19 @@ function ArticlePage() {
                 </article>
                 <article className='other-suggestions'>
                     <h2>YOU MAY ALSO LIKE</h2>
-                    <div className="other-article-wrapper">
-                        <img />
-                        <h3>ARTICLE TITLE</h3>
-                    </div>
-                    <div className="other-article-wrapper">
-                        <img />
-                        <h3>ARTICLE TITLE</h3>
-                    </div>
-                    <div className="other-article-wrapper">
-                        <img />
-                        <h3>ARTICLE TITLE</h3>
+                    <div className="suggestions-wrapper">
+                        <div className="other-article-wrapper">
+                            <img />
+                            <h3>ARTICLE TITLE</h3>
+                        </div>
+                        <div className="other-article-wrapper">
+                            <img />
+                            <h3>ARTICLE TITLE</h3>
+                        </div>
+                        <div className="other-article-wrapper">
+                            <img />
+                            <h3>ARTICLE TITLE</h3>
+                        </div>
                     </div>
                 </article>
             </section>

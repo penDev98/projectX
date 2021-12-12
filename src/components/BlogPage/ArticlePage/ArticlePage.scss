@@ -74,5 +74,102 @@
                 }
             }
         }
+        .second-section {
+            display: flex;
+            justify-content: end;
+            margin-top: 125px;
+
+            .quote-wrapper {
+                width: 500px;
+                margin-right: 75px;
+                margin-top: 20px;
+                p {
+                    font-family: "Open Sans";
+                    font-style: oblique;
+                    font-weight: 300;
+                    font-size: 24px;
+                    text-align: right;
+                    color: white;
+                }
+
+                span {
+                    position: relative;
+                    float: left;
+                    bottom: 20px;
+                    font-family: "Open Sans";
+                    font-style: italic;
+                    font-weight: 400;
+                    font-size: 64px;
+                    color: App.$main-color-yellow;
+                }
+            }
+
+            img {
+                width: 720px;
+                height: 510px;
+                background-color: App.$main-color-yellow;
+            }
+        }
+        .third-section {
+            display: flex;
+            flex-direction: column;
+            font-family: "Open Sans";
+            color: white;
+            align-self: center;
+            width: 850px;
+            margin-top: 130px;
+
+            h6 {
+                font-weight: 700;
+                font-size: 24px;
+                margin: 0;
+                padding: 0;
+                margin-top: 40px;
+            }
+
+            p {
+                font-weight: 300;
+                font-size: 24px;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+    .other-suggestions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 265px;
+
+        h2 {
+            font-family: "Oswald";
+            font-size: 36px;
+            font-weight: 400;
+            color: white;
+        }
+        .suggestions-wrapper {
+            display: flex;
+            justify-content: space-between;
+            width: 860px;
+            margin-top: 100px;
+            .other-article-wrapper {
+                display: flex;
+                flex-direction: column;
+                color: white;
+                text-align: center;
+
+                img {
+                    width: 265px;
+                    height: 265px;
+                    background-color: App.$main-color-gray;
+                }
+
+                h3 {
+                    font-family: "Oswald";
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+            }
+        }
     }
 }
